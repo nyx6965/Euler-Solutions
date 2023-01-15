@@ -7,8 +7,11 @@
 
 local sum = 0
 
+-- Loop throught the numbers
 for i = 1, 999, 1 do
+    -- Find the multiples of 3 and 5 using modulo
     if i % 3 == 0 or i % 5 == 0 then
+        -- Add each multiple to each other
         sum = sum + i
     end
 end

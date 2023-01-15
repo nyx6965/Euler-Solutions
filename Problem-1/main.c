@@ -9,13 +9,15 @@
 int main(void)
 {
     int sum = 0;
-
+    // Loop throught the numbers
     for (int i = 1; i < 1000; i++)
     {
+        // Find the multiples of 3 and 5 using modulo
         if (i % 3 == 0 || i % 5 == 0)
+            // Add each multiple to each other
             sum = sum + i;        
     }
 
     printf("%d\n",sum);
-    return 0;
+    return sum;
 }
