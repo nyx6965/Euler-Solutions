@@ -11,11 +11,11 @@ int GCD(int a,int b);
 int main()
 {
     int result = 1;
-    
+
     for (int i = 1; i <= 20; i++)
     {
         int x = GCD(i,result);
-        result = result / x * i;            
+        result = (result / x) * i;            
     }
   
     return 0;
@@ -34,10 +34,8 @@ int GCD(int a, int b)
     for (int i = 1; i <= value; i++)
     {
         if (a % i == 0 && b % i == 0 )
-        {
             if (largest_num == 0 || largest_num < i)
                 largest_num = i;
-        }
     }
     return largest_num;
 }

@@ -31,7 +31,6 @@ end
 
 for i = 1, num, 1 do
     if num % i == 0 then
-      print(i)
       x = PrimeNumbers(i)
       if largest_num == 0 or largest_num < x then
         largest_num = x
