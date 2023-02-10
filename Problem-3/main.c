@@ -8,7 +8,7 @@ int prime_numbers(int value);
 
 int main( void )
 {
-    long int num = 25;
+    long long int num = 600851475143;
     int flag, x,largest_num = 0;
     
     for (int i = 1; i <= num; i++)
