@@ -18,7 +18,7 @@ int main( void )
     // Intialize the 3rd term
     int nxt_t = t_1 + t_2;
 
-    for (int i = 1; i < 32; i++)
+    while (nxt_t < 4000000)
     {
         // Put the value of 2nd term inside 1st variable
         t_1 = t_2;
@@ -31,5 +31,6 @@ int main( void )
             // Add all even numbers to each other
             sum = sum + nxt_t;
     }
+    printf("%d",sum);
     return sum;
 }
